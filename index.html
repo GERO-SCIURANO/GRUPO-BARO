@@ -1,11 +1,11 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GRUPO BARO - INICIO</title>
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="icon" type="image/png" href="assets/soloedificioslogo.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,14 @@
 <header class="navbar">
   <div class="nav-inner container">
     <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="Grupo Baro" class="logo-nav" />
+      <img src="assets/soloedificioslogo.png" alt="Grupo Baro" class="logo-nav" />
       <span>GRUPO BARO</span>
     </a>
-    <nav>
-      <a href="index.html" class="active">INICIO</a>
+    <button class="nav-toggle" aria-label="Abrir men?" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu">
+            <a href="index.html" class="active">INICIO</a>
       <a href="quienes.html">QUIENES SOMOS</a>
       <a href="profesionales.html">NUESTROS PROFESIONALES</a>
       <a href="contacto.html">CONTACTO</a>
@@ -30,7 +33,7 @@
 </header>
 
   <section class="hero" role="banner" aria-label="Portada">
-    <div class="hero-bg" style="background-image: url('assets/bg.png');"></div>
+    <div class="hero-bg" style="background-image: url('assets/fondonuevo.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container fade-up">
       <h1>GRUPO BARO</h1>
@@ -40,15 +43,15 @@
     </div>
   </section>
 
-  <section class="container about three-split fade-up" id="somos">
+  <section class="container about home-about three-split fade-up" id="somos">
     <div class="about-grid">
       <div class="about-image">
         <img src="assets/somos.jpg" alt="Somos Grupo Baro" />
       </div>
       <div class="about-text">
-        <h3>¡Somos GRUPO BARO!</h3>
+        <h3>Somos GRUPO BARO!</h3>
         <ul>
-          <li>Grupo familiar especializado en administración de consorcios y alquileres.</li>
+          <li>Grupo familiar especializado en administracion de consorcios y alquileres.</li>
           <li>Profesionales dedicados a la propiedad horizontal.</li>
           <li>Servicio transparente y confiable para propietarios y consorcistas.</li>
         </ul>
@@ -56,7 +59,7 @@
     </div>
   </section>
 
-  <section class="container team three-split fade-up" id="profesionales">
+  <section class="container team team-light three-split fade-up" id="profesionales">
     <h3>NUESTROS PROFESIONALES</h3>
     <div class="cards">
       <a class="card" href="eduardo.html">
@@ -87,7 +90,7 @@
     <div class="contact-grid">
       <div class="contact-info">
         <img src="assets/logo-vertical.png" class="logo-vertical" alt="Logo Grupo Baro" />
-        <h4>Teléfonos de contacto</h4>
+        <h4>Telefonos de contacto</h4>
         <ul class="phones">
           <li>011 2590-2906</li>
           <li>011 5344-0887</li>
@@ -109,17 +112,17 @@
           <input type="text" name="apellido" placeholder="Apellido" required>
         </div>
         <div class="row">
-          <input type="tel" name="telefono" placeholder="Teléfono">
+          <input type="tel" name="telefono" placeholder="Telefono">
           <input type="email" name="email" placeholder="Email" required>
         </div>
         <input type="text" name="asunto" placeholder="Asunto" required>
         <textarea name="mensaje" rows="6" placeholder="Mensaje" required></textarea>
         <div class="form-actions">
           <button type="submit" class="btn-primary">Enviar</button>
-          <a class="btn-secondary" href="contacto.html">Ir a la página de Contacto</a>
+          <a class="btn-secondary" href="contacto.html">Ir a la p?gina de Contacto</a>
         </div>
         <p id="status" class="status" role="status" aria-live="polite"></p>
-        <p class="fallback">Si el botón no funciona, envíanos un correo a <a href="mailto:adm.grupobaro@gmail.com?subject=Consulta%20desde%20la%20web">adm.grupobaro@gmail.com</a>.</p>
+        <p class="fallback">Si el boton no funciona, envianos un correo a <a href="mailto:adm.grupobaro@gmail.com?subject=Consulta%20desde%20la%20web">adm.grupobaro@gmail.com</a>.</p>
       </form>
     </div>
   </section>
@@ -128,11 +131,11 @@
 <footer class="footer">
   <div class="container footer-card">
     <div class="footer-row">
-      <span> © <span id="year"></span> Grupo Baro</span>
+      <span>  <span id="year"></span> Grupo Baro</span>
       <span class="divider">|</span>
-      <a href="#">Términos y Condiciones</a>
+      <a href="#">Terminos y Condiciones</a>
       <span class="divider">|</span>
-      <a href="#">Política de Privacidad</a>
+      <a href="#">Politica de Privacidad</a>
     </div>
     <div class="footer-row footer-icons">
       <a class="icon" href="https://www.instagram.com/grupobaro_consorcios" target="_blank" rel="noreferrer">
